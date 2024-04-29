@@ -1,0 +1,10 @@
+http://localhost:8080 {
+  root * /home/runner/work/static-web-server/static-web-server/benchmarks-setup/testroot
+  file_server browse {
+    precompressed gzip
+  }
+  encode {
+    gzip
+    minimum_length 100
+  }
+}
